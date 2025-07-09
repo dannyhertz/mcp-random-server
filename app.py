@@ -21,5 +21,5 @@ def get_random_number() -> dict[str, Any]:
 if __name__ == "__main__":
     print(f"Server starting on port {port}")
     print(f"SSE endpoint: http://0.0.0.0:{port}/sse")
-    # Bind to 0.0.0.0 for Render compatibility
-    mcp.run("sse", host="0.0.0.0")
+    # FastMCP automatically binds to 0.0.0.0
+    mcp.run("sse")
